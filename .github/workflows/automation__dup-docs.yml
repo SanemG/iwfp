@@ -10,12 +10,12 @@ jobs:
       - uses: actions/checkout@v2
       - uses: Monorepo-Actions/setup-gh-cli@main
         with:
-          token: ${{ secrets.MY_GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
       - uses: Monorepo-Actions/file-dup-action@main
         with:
-          username: "tianhaoz95"
-          email: "tianhaoz@umich.edu"
-          token: ${{ secrets.MY_GITHUB_TOKEN }}
+          username: "sanemg"
+          email: "sanemguzeller@subjebilisim.com"
+          token: ${{ secrets.GITHUB_TOKEN }}
           config_files: "configs/file-dup-action.json"
           method: "pull_request"
           base: "master"
